@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Abhinav') {
+        stage('build') {
             steps {
-                echo 'Abhinav yadav'
+                build 'https://github.com/AbhinavCed/maven-basic.git'
             }
         }
     }
