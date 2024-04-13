@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                build 'https://github.com/AbhinavCed/maven-basic.git'
+                mvn clean package
             }
         }
     }
